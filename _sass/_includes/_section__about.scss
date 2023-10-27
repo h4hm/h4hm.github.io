@@ -46,32 +46,34 @@
     .cta {
       margin: 8px 0 0 -4px;
     }
-	}
-	
+  }
 
   @include mq(tabletp) {
     margin-bottom: 160px;
-    
+
     hr {
       margin-bottom: 120px;
     }
-		
+
     .wrap {
-      grid-template-columns: 1fr 1fr;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // grid-template-columns: 1fr 1fr;
     }
 
     .about__image {
       width: 100%;
       margin-left: 0;
-		}
-		
-		.about__content {
-			margin-top: 64px;
+    }
 
-			.subtitle {
-				margin-bottom: 24px;
-			}
-		}
+    .about__content {
+      margin-left: 60px;
+
+      .subtitle {
+        margin-bottom: 24px;
+      }
+    }
   }
 }
 
